@@ -36,6 +36,7 @@ public class CharacterController : MonoBehaviour
        }
         Vector3 newVelocity = transform.forward * Input.GetAxis("Vertical") * maxSpeed;
         myRigidbody.velocity = new Vector3(newVelocity.x, myRigidbody.velocity.y, newVelocity.z);
+
         rotation = rotation + Input.GetAxis("Mouse X") * rotationSpeed;
         transform.rotation = Quaternion.Euler(new Vector3(0.0f, rotation, 0.0f));
 
