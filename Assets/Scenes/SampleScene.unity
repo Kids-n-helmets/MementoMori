@@ -275,6 +275,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6067185528594298527, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db4e040045de9594ab1f5c0235840c9f, type: 2}
     - target: {fileID: 919132149155446097, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
       propertyPath: m_Name
       value: Bear trap (1)
@@ -786,6 +790,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6067185528594298527, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db4e040045de9594ab1f5c0235840c9f, type: 2}
     - target: {fileID: 919132149155446097, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
       propertyPath: m_Name
       value: Bear trap (2)
@@ -3213,6 +3221,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6067185528594298527, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db4e040045de9594ab1f5c0235840c9f, type: 2}
+    - target: {fileID: -926717388304072829, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db4e040045de9594ab1f5c0235840c9f, type: 2}
     - target: {fileID: 919132149155446097, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
       propertyPath: m_Name
       value: Bear trap
@@ -3331,7 +3347,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d4079a015ee34be40a627919cb62e8dc, type: 2}
+  - {fileID: 2100000, guid: db4e040045de9594ab1f5c0235840c9f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3438,6 +3454,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6067185528594298527, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db4e040045de9594ab1f5c0235840c9f, type: 2}
     - target: {fileID: 919132149155446097, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
       propertyPath: m_Name
       value: Bear trap (4)
@@ -3786,6 +3806,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6067185528594298527, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: db4e040045de9594ab1f5c0235840c9f, type: 2}
     - target: {fileID: 919132149155446097, guid: 0049d2006c5a9fb4fb4fdc375a66aff5, type: 3}
       propertyPath: m_Name
       value: Bear trap (3)
