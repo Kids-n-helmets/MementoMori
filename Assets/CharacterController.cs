@@ -2,24 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterController : MonoBehaviour
-{     
+public class CharacterController : MonoBehaviour    
+{
+       Vector3 respawnPoint = new Vector3 (7.23f,2.67f,7.37f);
+
+
+     public float maxSpeed = 3.0f;
+     public float rotation = 0.0f;
+     public float camRotation = 0.0f;
+     GameObject cam;
+     Rigidbody myRigidbody;
+
+     bool isOnGround;
+     public GameObject  groundChecker;
+     public LayerMask groundLayer;
+     public float jumpforce= 300.0f;
+
+     float rotationSpeed = 2.0f;
+     float camRotationSpeed = 1.5f;
     
-    // Start is called before the first frame update
-    public float maxSpeed = 3.0f;
-    public float rotation = 0.0f;
-    public float camRotation = 0.0f;
-    GameObject cam;
-    Rigidbody myRigidbody;
-
-    bool isOnGround;
-    public GameObject  groundChecker;
-    public LayerMask groundLayer;
-    public float jumpforce= 300.0f;
-
-    float rotationSpeed = 2.0f;
-    float camRotationSpeed = 1.5f;
-    void Start()
+     void Start()
     {
         cam = GameObject.Find("Main Camera");
         myRigidbody = GetComponent<Rigidbody>(); 
@@ -42,5 +44,17 @@ public class CharacterController : MonoBehaviour
 
         camRotation = camRotation - Input.GetAxis("Mouse Y") * camRotationSpeed;
         cam.transform.localRotation = Quaternion.Euler(new Vector3(camRotation, 0.0f, 0.0f));
+
+       
+          
+        
     }
+
+     private void OnTriggerEnter(Collider other)
+     {
+            if (other.tag == "Death box")
+    {
+          transform.position = respawnPoint;
+    }
+     }
 }
