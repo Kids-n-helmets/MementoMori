@@ -6,6 +6,12 @@ public class CharacterController : MonoBehaviour
 {
        Vector3 respawnPoint = new Vector3 (7.23f,2.67f,7.37f);
 
+     public AudioClip jump;
+     public AudioClip backgroundMusic;
+
+     public AudioSource sfxPlayer;
+     public AudioSource musicPlayer;
+     
 
      public float maxSpeed = 3.0f;
      public float rotation = 0.0f;
@@ -24,7 +30,11 @@ public class CharacterController : MonoBehaviour
      void Start()
     {
         cam = GameObject.Find("Main Camera");
-        myRigidbody = GetComponent<Rigidbody>(); 
+        myRigidbody = GetComponent<Rigidbody>();
+        musicPlayer.clip = backgroundMusic;
+        musicPlayer.loop = true;
+        musicPlayer.Play();
+        sfxPlayer.PlayOneShot(jump); 
     }
 
     // Update is called once per frame
